@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+  background: #30ce88;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #205374;
+  border-radius: 20px;
+}
+
+.continner {
+  /* background: linear-gradient(20deg, #f78484, #7c127c); */
+  background: linear-gradient(20deg, #205374, #30ce88);
+  font-family: consolas;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.continner a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+}

@@ -1,0 +1,68 @@
+.home-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 90vh;
+}
+
+.canvas {
+  width: 400px;
+  height: 500px;
+  transform: rotate(20deg);
+  background-color: rgb(171, 190, 185);
+  border-end-end-radius: 200px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-start-start-radius: 200px;
+}
+
+.shape {
+  position: relative;
+  top: 5rem;
+}
+
+.greeting-paragraph {
+  position: relative;
+  top: 15rem;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+.greeting-paragraph p {
+  border-bottom: 5px rgb(145, 3, 90) solid;
+}
+
+.greeting-item {
+  color: #f8f403;
+  text-shadow: 1px 1px 3px black;
+}
+
+.main-image {
+  width: auto;
+  height: 120%;
+  transform: rotate(-20deg);
+  position: relative;
+  bottom: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  .home-section {
+    height: 160vh;
+  }
+
+  .canvas {
+    width: 200px;
+    height: auto;
+  }
+
+  .main-image {
+    width: 300px;
+    height: 400px;
+    bottom: 50px;
+    right: 30px;
+  }
+
+  .greeting-paragraph {
+    font-size: 1rem;
+  }
+}

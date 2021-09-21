@@ -1,0 +1,30 @@
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-item a {
+  padding: 5px 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.nav-item a:hover {
+  border: 1px solid #d3f5ce;
+  background-color: #d3f5ce;
+  border-end-end-radius: 50px;
+  border-start-start-radius: 50px;
+  color: #272727;
+  text-shadow: 1px 1px 5px rgb(31, 30, 30);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-list {
+    opacity: 0;
+    display: none;
+  }
+}

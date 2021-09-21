@@ -1,0 +1,33 @@
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header > i {
+  display: none;
+}
+
+#logo {
+  font-family: Verdana;
+  font-size: 1.5em;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+#logo:hover {
+  color: white;
+  text-shadow: 1px 1px 5px rgb(31, 30, 30);
+}
+
+.header-mobile {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .header > i {
+    display: block;
+  }
+}
