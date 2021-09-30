@@ -1,3 +1,9 @@
 #main-section {
   height: 100%;
 }
+
+@media (max-height: 400px;) {
+  #main-section{
+    height: 200%;
+  }
+}

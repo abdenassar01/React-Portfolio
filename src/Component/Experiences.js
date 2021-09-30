@@ -6,7 +6,7 @@ const Experiences = () => {
       <h1>Education: </h1>
       <ul>
         <li>Bac</li>
-        <li>BTS: "Developement des Systemes d'Information"</li>
+        <li>BTS: "Developpement des Systemes d'Information"</li>
       </ul>
       <h1>Skills: </h1>
       <ul>
@@ -20,7 +20,7 @@ const Experiences = () => {
       </ul>
       <div className="links">
         <a href="mailto:abdenassaramimi2001@gmail.com">Email Me</a>
-        <a href="#">Linkedin</a>
+        <a href="https://www.linkedin.com/">Linkedin</a>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import "../css/comp-persInfo.css";
+// importing the icons and my profile image
 import myImg from "../imgs/img-profile.jpg";
 import fb_icon from "../imgs/Icon/facebook.png";
 import in_icon from "../imgs/Icon/instagram.png";
@@ -32,22 +32,22 @@ const PersInfo = (props) => {
         <div className="social-account">
           <a href="facebook.com" className="account-wrapper facebook">
             <img src={fb_icon} alt="" className="social-account-ico" />
-            <span>Facebook</span>
+            <span>facebook</span>
           </a>
           <a
             href="instagram.com/abde_nassar01"
             className="instagram account-wrapper"
           >
             <img src={in_icon} alt="" className="social-account-ico" />
-            <span>Instagram</span>
+            <span>instagram</span>
           </a>
           <a href="github.org" className="github account-wrapper">
             <img src={gh_icon} alt="" className="social-account-ico" />
-            <span>Github</span>
+            <span>github</span>
           </a>
           <a href="telegram.com" className="telegram account-wrapper">
             <img src={tg_icon} alt="" className="social-account-ico" />
-            <span>Telegram</span>
+            <span>linkedin</span>
           </a>
         </div>
       </div>

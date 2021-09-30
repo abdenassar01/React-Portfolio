@@ -1,0 +1,116 @@
+/* this is a stylesheet for all the the footer area */
+
+footer{
+  height: 35vh;
+  background: rgb(50, 50, 50);
+  display: grid;
+  grid-template-columns: 30% 40% auto;
+}
+
+footer .footer-nav{
+    padding-top: 2rem;
+    display: grid;
+    align-items:  center;
+}
+
+.footer-nav ul{
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  place-items: center;
+}
+
+.footer-nav .nav-item {
+  margin: .2rem;
+}
+
+.footer-nav .nav-item a{
+  color: rgb(150, 150, 150);
+  font-weight: bold;
+}
+
+.footer-nav .nav-item a:hover{
+  background: rgb(50, 50, 50);
+  color: white;
+  border: none;
+  border-radius: 0;
+}
+
+.footer-social-media{
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  background-color: rgb(0, 143, 91);
+}
+
+.footer-social-media p{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-social-media ul{
+  list-style: none;
+  display: grid;
+  place-items: center;
+}
+
+.footer-social-media ul li{
+  margin: .5rem;
+}
+
+.footer-social-media ul li a{
+  text-decoration: none;
+  margin: 2rem;
+  font-size: 1.2rem;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.footer-social-media .facebook:hover{
+  color: blue;
+  background-color: transparent;
+}
+
+.footer-social-media .instagram:hover{
+  color: rgb(200, 0, 100);
+  background-color: transparent;
+}
+
+.footer-social-media .github:hover{
+  color: orange;
+  background-color: transparent;
+}
+
+.footer-social-media .linkedin:hover{
+  color: rgba(0, 50, 255, .9);
+  background-color: transparent;
+}
+
+.hire-me-section{
+  display: grid;
+  place-items: center;
+}
+
+.hire-me-section P{
+  position: absolute;
+  bottom: 1rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.emailBtn{
+  color: rgb(137, 140, 128) !important ;
+  margin-bottom: 3rem;
+  border-radius: 2rem ;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  text-transform: none;
+  background-color: rgb(4, 97, 255);
+}
+
+.emailBtn:hover{
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(1, 144, 136);
+}

@@ -1,25 +1,37 @@
 import { useState } from "react";
+import "../css/comp-contact.css";
+
 
 const ContactForm = () => {
   const [email, SetEmail] = useState("");
   const [nameUser, SetNameUser] = useState("");
   const [msgBody, SetMsgBody] = useState("");
-  const [msgError, SetMsgError] = useState("");
+  const [msgError, SetMsgError] = useState([]);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    SetMsgError([]);
+
     if (email.length < 6) {
-      SetMsgError("Missing Email");
+      SetMsgError(prevState => ["Messing Email", ...prevState]);
     }
 
     if (nameUser.length < 3) {
-      SetMsgError("Missing Name");
+      SetMsgError(prevState => ["Messing name", ...prevState]);
     }
 
     if (msgBody.length < 10) {
-      SetMsgError("Message Should Contain More than 10 Charecters");
+      SetMsgError(prevState => ["Message field Should Contain at least 10 Charecters", ...prevState]);
     }
+
+    if(msgError.length === 0){
+      //send The message to my gmail account using javaScript and parametre injaction.
+      // if there is no error message to show then we are good to send the email
+
+      window.open('mailto:abdenassaramimi2001@gmail.com?subject=message from {nameUser} & body={msgBody}')
+    }
+
   };
   const handleEmailChange = (e) => {
     SetEmail(e.target.value);
@@ -32,7 +44,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" method="post">
       <h2>Email Me</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="form-inputs">
@@ -47,7 +59,6 @@ const ContactForm = () => {
             type="text"
             name="name"
             placeholder="FullName?"
-            required
             value={nameUser}
             onChange={handleNameChange}
           />
@@ -55,15 +66,19 @@ const ContactForm = () => {
             name="msgBody"
             id=""
             cols="30"
-            rows="10"
+            rows="7"
             value={msgBody}
             onChange={handleMsgChange}
             placeholder="Message Body?"
           ></textarea>
-          <input type="submit" className="submit-btn" />
+          <input type="submit" />
         </div>
       </form>
-      <div className="errorMsg">{msgError}</div>
+      <div className="errorMsg">
+      <ul>
+      {msgError.map(message => <li>{message}</li>)}
+      </ul>
+      </div>
     </div>
   );
 };

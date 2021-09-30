@@ -8,7 +8,6 @@ const Header = (props) => {
         Portfolio
       </a>
       <Nav />
-      <i>Icon</i>
     </div>
   );
 };
