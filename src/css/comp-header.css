@@ -3,28 +3,53 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: linear 50ms ;
 }
 
-#logo {
-  font-family: Verdana;
-  font-size: 1.5em;
-  font-weight: bold;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-}
-
-#logo:hover {
-  color: white;
-  text-shadow: 1px 1px 5px rgb(31, 30, 30);
-}
 
 .header-mobile {
-  height: 100vh;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
+  text-align: center;
+}
+
+.header-mobile #logo{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.header-mobile .nav-list-mobile{
+  margin-top: 5rem;
+}
+
+.header-mobile .nav-item{
+  height: 4rem;
+}
+
+.header-mobile .mobile-nav-icon{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.home-icon{
+  width: 2.5rem;
+  height: auto;
+}
+
+.mobile-nav-icon{
+  width: 3rem;
+  color: black;
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .header > i {
+  .header{
+    background-color: white;
+  }
+
+  .mobile-nav-icon{
     display: block;
   }
 }

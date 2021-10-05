@@ -1,13 +1,27 @@
 import Nav from "./Nav";
 import "../css/comp-header.css";
+import homeIcon from '../imgs/home.png'
+import mobileNav from '../imgs/mobileNav.png'
+import React, {useState} from 'react';
 
-const Header = (props) => {
+const Header = () => {
+
+  const [mobileNavFlag, setMobileNavFlag] = useState(false);
+
+  const toggleNav = () =>{
+    if (mobileNavFlag) {
+      setMobileNavFlag(false);
+    }else{
+      setMobileNavFlag(true);
+    }
+  }
   return (
-    <div className="header">
+    <div className={mobileNavFlag ? "header header-mobile" : "header"}>
       <a href="#main-section" id="logo">
-        Portfolio
+        <img src={homeIcon} className='home-icon' alt='abdenassar amimi'/>
       </a>
-      <Nav />
+      <Nav mobileNavFlag={mobileNavFlag}/>
+        <img src={mobileNav} className='mobile-nav-icon' onClick={toggleNav} alt='abdenassar amimi'/>
     </div>
   );
 };

@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   return (
     <div className="form" method="post">
-      <h2>Email Me</h2>
+      <h2 className='email-me-text'>Email Me</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="form-inputs">
           <input

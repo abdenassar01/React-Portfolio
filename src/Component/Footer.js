@@ -1,12 +1,12 @@
 import '../css/copm-footer.css'
-import Nav from './Nav'
 import SocialMedia from './SocialMedia'
 import HireMe from './HireMe'
+import FooterNav from './FooterNav'
 
 const Footer = (props) =>{
   return(
     <footer>
-      <Nav class='footer-nav'/>
+      <FooterNav class='footer-nav'/>
       <SocialMedia />
       <HireMe />
     </footer>

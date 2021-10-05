@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-@media (max-height: 400px;) {
+@media (max-height: 700px;) {
   #main-section{
     height: 200%;
   }

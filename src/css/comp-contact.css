@@ -37,7 +37,7 @@
   padding: .4rem 0rem;
   background-color: rgb(4, 97, 255);
   border: none ;
-  color: rgb(135, 135, 135);
+  color: rgb(228, 216, 216);
 }
 
 .form-inputs input:focus,
@@ -71,4 +71,27 @@
 .errorMsg ul{
   list-style: none;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  #contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my-pic{
+    display: none;
+  }
+
+  .form-inputs, .email-me-text{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .email-me-text{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }

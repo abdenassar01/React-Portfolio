@@ -7,33 +7,27 @@ footer{
   grid-template-columns: 30% 40% auto;
 }
 
-footer .footer-nav{
-    padding-top: 2rem;
-    display: grid;
-    align-items:  center;
-}
-
-.footer-nav ul{
+/* Write the stuling of the footer nav here */
+.footer-nav-list{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
-  line-height: 3rem;
-  place-items: center;
+  list-style: none;
 }
 
-.footer-nav .nav-item {
-  margin: .2rem;
+.footer-nav-item{
+  margin: 1.7rem;
 }
 
-.footer-nav .nav-item a{
-  color: rgb(150, 150, 150);
+.footer-nav-item a{
+  font-family: consolas;
   font-weight: bold;
+  color: rgb(171, 168, 145);
 }
 
-.footer-nav .nav-item a:hover{
-  background: rgb(50, 50, 50);
+.footer-nav-item a:hover{
   color: white;
-  border: none;
-  border-radius: 0;
 }
 
 .footer-social-media{
@@ -113,4 +107,21 @@ footer .footer-nav{
 .emailBtn:hover{
   color: rgb(255, 255, 255) !important;
   background-color: rgb(1, 144, 136);
+}
+
+@media screen and (max-width: 600px) {
+
+    footer{
+      grid-template-columns: 25% 75%;
+    }
+
+    .footer-social-media{
+      border-radius: 0;
+    }
+
+    .hire-me-section{
+      display: none;
+    }
+
+
 }

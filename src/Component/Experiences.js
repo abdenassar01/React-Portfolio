@@ -20,7 +20,7 @@ const Experiences = () => {
       </ul>
       <div className="links">
         <a href="mailto:abdenassaramimi2001@gmail.com">Email Me</a>
-        <a href="https://www.linkedin.com/">Linkedin</a>
+        <a href="https://drive.google.com/file/d/1cVViltccQSVVTytrgkugu_wdIUpZ8HIL/view?usp=sharing" target='blank'>Download Resume</a>
       </div>
     </div>
   );

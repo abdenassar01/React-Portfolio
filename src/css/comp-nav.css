@@ -22,9 +22,8 @@
   text-shadow: 1px 1px 5px rgb(31, 30, 30);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .nav-list {
-    opacity: 0;
     display: none;
   }
 }
