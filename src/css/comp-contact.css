@@ -43,12 +43,12 @@
 .form-inputs input:focus,
 .form-inputs textarea:focus {
   outline: none;
-  border-bottom: .15rem solid yellow;
+  border-bottom: .15rem solid #EB1371;
 }
 
 
 .form-inputs input[type=submit]:hover{
-  background-color: rgb(1, 144, 136);
+  background-color: #EB1371;
   color: white
 }
 

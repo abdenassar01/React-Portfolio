@@ -3,7 +3,7 @@ const SocialMedia = () => {
 
   return(
     <div className='footer-social-media'>
-      <p>Check My Account</p>
+      <p>Check My Accounts</p>
       <ul>
         <li><a target='blank' href='https://www.facebook.com/abdenassar01/' className='facebook' >facebook</a></li>
         <li><a target='blank' href='https://www.github.com/abdenassar01' className='github'>github</a></li>

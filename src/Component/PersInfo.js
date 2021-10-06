@@ -30,22 +30,23 @@ const PersInfo = (props) => {
           </div>
         </div>
         <div className="social-account">
-          <a href="facebook.com" className="account-wrapper facebook">
+          <a href="facebook.com" className="account-wrapper facebook" target='blank'>
             <img src={fb_icon} alt="" className="social-account-ico" />
             <span>facebook</span>
           </a>
           <a
             href="instagram.com/abde_nassar01"
+            target='blank'
             className="instagram account-wrapper"
           >
             <img src={in_icon} alt="" className="social-account-ico" />
             <span>instagram</span>
           </a>
-          <a href="github.org" className="github account-wrapper">
+          <a href="github.org" className="github account-wrapper" target='blank'>
             <img src={gh_icon} alt="" className="social-account-ico" />
             <span>github</span>
           </a>
-          <a href="telegram.com" className="telegram account-wrapper">
+          <a href="https://www.linkedin.com/in/abdenassar-amimi-80a23b204/" target='blank' className="linkedin account-wrapper">
             <img src={tg_icon} alt="" className="social-account-ico" />
             <span>linkedin</span>
           </a>

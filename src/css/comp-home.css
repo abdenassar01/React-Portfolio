@@ -3,17 +3,15 @@
   justify-content: space-around;
   flex-wrap: wrap;
   height: 90vh;
+  padding-top: 10vh;
 }
 
 .canvas {
-  width: 400px;
-  height: 500px;
-  transform: rotate(20deg);
-  background-color: rgb(171, 190, 185);
-  border-end-end-radius: 200px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-start-start-radius: 200px;
+  width: 350px;
+  height: 450px;
+  /* background-color: #D4D4F7; */
+  background-color: white;
+  border-radius: 20rem 2rem 7rem 0rem;
 }
 
 .shape {
@@ -40,9 +38,9 @@
 .main-image {
   width: auto;
   height: 120%;
-  transform: rotate(-20deg);
   position: relative;
-  bottom: 20%;
+  bottom: 15%;
+  filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
 }
 
 @media screen and (max-width: 600px) {

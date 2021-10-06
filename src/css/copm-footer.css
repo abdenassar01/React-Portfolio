@@ -2,9 +2,11 @@
 
 footer{
   height: 35vh;
-  background: rgb(50, 50, 50);
+  background: #2F4858;
   display: grid;
   grid-template-columns: 30% 40% auto;
+  border-radius: 2rem 2rem 0 0 ;
+
 }
 
 /* Write the stuling of the footer nav here */
@@ -33,13 +35,14 @@ footer{
 .footer-social-media{
   display: grid;
   place-items: center;
-  border-radius: 2rem;
-  background-color: rgb(0, 143, 91);
+  border-radius: 2rem 2rem 0 0 ;
+  background-color:#C3F9FF;
 }
 
 .footer-social-media p{
   font-size: 1.2rem;
   font-weight: bold;
+  color: #2F4858;
 }
 
 .footer-social-media ul{
