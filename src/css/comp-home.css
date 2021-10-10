@@ -27,11 +27,11 @@
 }
 
 .greeting-paragraph p {
-  border-bottom: 5px rgb(145, 3, 90) solid;
+  border-bottom: 5px #FFFF00 solid;
 }
 
 .greeting-item {
-  color: #f8f403;
+  color: #FFFF00;
   text-shadow: 1px 1px 3px black;
 }
 
