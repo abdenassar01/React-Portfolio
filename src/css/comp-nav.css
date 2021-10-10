@@ -17,11 +17,11 @@
 }
 
 .nav-item a:hover {
-  border: 1px solid #d3f5ce;
-  background-color: #d3f5ce;
+  /* border: 1px solid #d3f5ce; */
+  background-color: #e210a1;
   border-radius: 2rem;
   color: #272727;
-  text-shadow: 1px 1px 5px rgb(31, 30, 30);
+  text-shadow: 1px 1px 1px white;
 }
 
 .nav-icon{
