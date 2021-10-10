@@ -29,7 +29,12 @@ const ContactForm = () => {
       //send The message to my gmail account using javaScript and parametre injaction.
       // if there is no error message to show then we are good to send the email
 
-      window.open('mailto:abdenassaramimi2001@gmail.com?subject=message from {nameUser} & body={msgBody}')
+      window.open("mailto:abdenassaramimi99@gmail.com?subject=msessage from " + nameUser + ' throught portfolio &body='+msgBody);
+
+      SetEmail("");
+      SetNameUser("");
+      SetMsgBody("");
+      SetMsgError([]);
     }
 
   };

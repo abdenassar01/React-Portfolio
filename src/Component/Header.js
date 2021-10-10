@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import "../css/comp-header.css";
-import homeIcon from '../imgs/home.png'
+import houseIcon from '../imgs/house.png';
 import mobileNav from '../imgs/mobileNav.png'
 import React, {useState} from 'react';
 
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className={mobileNavFlag ? "header header-mobile" : "header"}>
       <a href="#main-section" id="logo">
-        <img src={homeIcon} className='home-icon' alt='abdenassar amimi'/>
+        <img src={houseIcon} className='home-icon' alt='abdenassar amimi'/>
       </a>
       <Nav mobileNavFlag={mobileNavFlag}/>
         <img src={mobileNav} className='mobile-nav-icon' onClick={toggleNav} alt='abdenassar amimi'/>

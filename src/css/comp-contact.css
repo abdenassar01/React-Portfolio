@@ -43,7 +43,6 @@
 .form-inputs input:focus,
 .form-inputs textarea:focus {
   outline: none;
-  border-bottom: .15rem solid #EB1371;
 }
 
 

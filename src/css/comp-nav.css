@@ -6,10 +6,12 @@
 
 .nav-item {
   margin-left: 10px;
+
 }
 
 .nav-item a {
-  padding: 5px 20px;
+  position: relative;
+  padding: 5px 20px 5px 40px;
   font-weight: bold;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
@@ -20,6 +22,14 @@
   border-radius: 2rem;
   color: #272727;
   text-shadow: 1px 1px 5px rgb(31, 30, 30);
+}
+
+.nav-icon{
+  height: 1.5rem;
+  widows: auto;
+  position: absolute;
+  bottom: .2rem;
+  left: .5rem;
 }
 
 @media screen and (max-width: 400px) {
